@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yuxiao Liang</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav class="nav-menue">
+      <a class="nav-logo">YUXIAO</a>
+      <a class="nav-logo" id="surname">LIANG</a>
+      <a class="nav-text"  href="info.html">Info</a>
+      <a class="nav-text"  href="index.html">Projects</a>
+
+    </nav>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Wearable')" id="defaultOpen">Wearable</button>
+        <button class="tablinks" onclick="openCity(event, 'VirtualDesign')">Virtual Design</button>
+        <button class="tablinks" onclick="openCity(event, 'Illustration')">Illustration</button>
+    </div>
+    
+    <div class="content">
+        <div id="Wearable" class="tabcontent">
+            <div class="img-box">
+              <img src="page-magic-glove/pictures/Picture1.jpg" class="image">
+              <div class="overlay" >
+                <a href="magic-glove.html">
+                <div class="text">Magic Glove</div>
+                </a>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="IMG_0522.jpeg" class="image">
+              <div class="overlay">
+                <a href="the-Sxty-river.html">
+                <div class="text">The Sxty river</div>
+                </a>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="IMG_7333.PNG" class="image">
+              <div class="overlay">
+                <div class="text">Who is guilty</div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="IMG_7333.PNG" class="image">
+              <div class="overlay">
+                <div class="text">The Sxty river</div>
+              </div>
+            </div>
+        </div>
+        
+        <div id="VirtualDesign" class="tabcontent">
+          <div class="img-box">
+            <img src="IMG_0522.jpeg" class="image">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+
+          <div class="img-box">
+            <img src="IMG_7333.PNG" class="image">
+            <div class="overlay">
+              <div class="text">Hello World</div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="Illustration" class="tabcontent">
+      
+        </div>
+
+    </div>>
+
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "flex";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+
+    </script>
+</body>
+</html>
